@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"
+        integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <title>Flip</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo"><span>Manchester City</span> Store</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Camisas</a></li>
+                <li><a href="short.html">Shorts</a></li>
+                <li><a href="sock.html">Socks</a></li>
+                <li><a href="chuteira.html">Chuteiras</a></li>
+                <li><a href="moletom.html">Moletons</a></li>
+            </ul>
+            <form class="search-form">
+                <input type="text" placeholder="search">
+                <button type="submit">Pesquisar</button>
+            </form>
+        </div>
+    </nav>
+
+
+    <div class="container">
+
+        <div class="card card1">
+            <h2>Chuteira 1</h2>
+            <img src="./img/chuteira-1.jpg" alt="" class="produto">
+            <button>Comprar</button>
+        </div>
+
+
+        <div class="card card3">
+            <h2>chuteira 2</h2>
+            <img src="./img/chuteira-2.jpg" alt="" class="produto">
+            <button>Comprar</button>
+        </div>
+
+    </div>
+
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.5
+        });
+    </script>
+
+</body>
+
+</html>

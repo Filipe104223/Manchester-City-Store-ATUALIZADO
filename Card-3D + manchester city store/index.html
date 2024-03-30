@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"
+        integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <title>Flip</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo"><span>Manchester City</span> Store</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Camisas</a></li>
+                <li><a href="short.html">Shorts</a></li>
+                <li><a href="sock.html">Socks</a></li>
+                <li><a href="chuteira.html">Chuteiras</a></li>
+                <li><a href="moletom.html">Moletons</a></li>
+            </ul>
+            <form class="search-form">
+                <input type="text" placeholder="search">
+                <button type="submit">Pesquisar</button>
+            </form>
+        </div>
+    </nav>
+
+
+    <div class="container">
+
+        <div class="card card1">
+            <h2>Camisa 1</h2>
+            <img src="./img/Camiseta_Manchester_City_Authentic_Primera_2020-2021.jpg" alt="" class="produto">
+            <button>Comprar</button>
+        </div>
+
+
+        <div class="card card3">
+            <h2>Camisa 2</h2>
+            <img src="./img/19a3bf7b753f660a59d0b94a55f7f8f0--manchester-city-uniform.jpg" alt="" class="produto">
+            <button>Comprar</button>
+        </div>
+
+        <div class="card card2">
+            <h2>Camisa 3</h2>
+            <img src="./img/camisa_manchester_city_2024_uniforme_3_dry_cell_9841_1_32f942c754f95df4eac602218e52b466.webp" alt="" class="produto">
+            <button>Comprar</button>
+        </div>
+
+      
+    </div>
+
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.5
+        });
+    </script>
+
+</body>
+
+</html>
